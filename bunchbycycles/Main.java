@@ -29,8 +29,8 @@ public class Main {
   static void testBucketingByNumberOfCycles() {
     System.out.println("Counting batteries by usage cycles...\n");
     CountsByUsage counts = countBatteriesByUsage(new int[] {100, 300, 500, 600, 900, 1000,919,400,920,0,-1});
-    assert(counts.lowCount == 5);
-    assert(counts.mediumCount == 6);
+    assert(counts.lowCount == 4);
+    assert(counts.mediumCount == 5);
     assert(counts.highCount == 2);
     System.out.println("Done counting :)\n");
   }
