@@ -13,14 +13,14 @@ public class Main {
 	    for(int i=0;i<cycles.length;i++) {
 	    	//counting for battery having less than 400 charge cycle
 	    	if(cycles[i]<400) {
-	    		counts.lowCount++;
+	    		CountsByUsage.lowCount++;
 	    	}
 	    	//counting for battery having between 400 and 919 charge cycle
 	    	else if(cycles[i]>=400 && cycles[i]<=919) {
-	    		counts.mediumCount++;
+	    		CountsByUsage.mediumCount++;
 	    	}
 	    	else if(cycles[i]>=920) {
-	    		counts.highCount++;
+	    		CountsByUsage.highCount++;
 	    	}
 	    }
     return counts;
